@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/philippefragniere/static/css/main.fa3ef709.chunk.css",
-    "main.js": "/philippefragniere/static/js/main.fe50fa59.chunk.js",
-    "main.js.map": "/philippefragniere/static/js/main.fe50fa59.chunk.js.map",
+    "main.js": "/philippefragniere/static/js/main.368dcfb8.chunk.js",
+    "main.js.map": "/philippefragniere/static/js/main.368dcfb8.chunk.js.map",
     "runtime-main.js": "/philippefragniere/static/js/runtime-main.8098a19c.js",
     "runtime-main.js.map": "/philippefragniere/static/js/runtime-main.8098a19c.js.map",
     "static/js/2.af9547f4.chunk.js": "/philippefragniere/static/js/2.af9547f4.chunk.js",
     "static/js/2.af9547f4.chunk.js.map": "/philippefragniere/static/js/2.af9547f4.chunk.js.map",
     "index.html": "/philippefragniere/index.html",
-    "precache-manifest.9f161d1104d8acbe4b45425b75665593.js": "/philippefragniere/precache-manifest.9f161d1104d8acbe4b45425b75665593.js",
+    "precache-manifest.be3e3eee581d7349f545457cfffaacab.js": "/philippefragniere/precache-manifest.be3e3eee581d7349f545457cfffaacab.js",
     "service-worker.js": "/philippefragniere/service-worker.js",
     "static/css/main.fa3ef709.chunk.css.map": "/philippefragniere/static/css/main.fa3ef709.chunk.css.map",
     "static/js/2.af9547f4.chunk.js.LICENSE.txt": "/philippefragniere/static/js/2.af9547f4.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.8098a19c.js",
     "static/js/2.af9547f4.chunk.js",
     "static/css/main.fa3ef709.chunk.css",
-    "static/js/main.fe50fa59.chunk.js"
+    "static/js/main.368dcfb8.chunk.js"
   ]
 }
