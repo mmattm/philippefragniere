@@ -97,7 +97,7 @@ export default class Slides extends React.Component {
 
     return (
       <>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Route exact path="/">
             {routes[0] ? (
               <Redirect
