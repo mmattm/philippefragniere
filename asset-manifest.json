@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/philippefragniere/static/css/main.fa3ef709.chunk.css",
+    "main.js": "/philippefragniere/static/js/main.46b76a7c.chunk.js",
+    "main.js.map": "/philippefragniere/static/js/main.46b76a7c.chunk.js.map",
+    "runtime-main.js": "/philippefragniere/static/js/runtime-main.8098a19c.js",
+    "runtime-main.js.map": "/philippefragniere/static/js/runtime-main.8098a19c.js.map",
+    "static/js/2.af9547f4.chunk.js": "/philippefragniere/static/js/2.af9547f4.chunk.js",
+    "static/js/2.af9547f4.chunk.js.map": "/philippefragniere/static/js/2.af9547f4.chunk.js.map",
+    "index.html": "/philippefragniere/index.html",
+    "precache-manifest.34b09f4ec903d003ecb1fc1eef27c985.js": "/philippefragniere/precache-manifest.34b09f4ec903d003ecb1fc1eef27c985.js",
+    "service-worker.js": "/philippefragniere/service-worker.js",
+    "static/css/main.fa3ef709.chunk.css.map": "/philippefragniere/static/css/main.fa3ef709.chunk.css.map",
+    "static/js/2.af9547f4.chunk.js.LICENSE.txt": "/philippefragniere/static/js/2.af9547f4.chunk.js.LICENSE.txt",
+    "static/media/fonts.css": "/philippefragniere/static/media/GT-America-Standard-Regular.d331aa7a.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8098a19c.js",
+    "static/js/2.af9547f4.chunk.js",
+    "static/css/main.fa3ef709.chunk.css",
+    "static/js/main.46b76a7c.chunk.js"
+  ]
+}
