@@ -31,7 +31,6 @@ export default class Slides extends React.Component {
     fetch("https://boiling-bastion-11005.herokuapp.com/")
       .then(res => res.json())
       .then(res => {
-        console.log(res);
         // ID slug instead of empty label
         res.records.forEach((element, index) => {
           element.fields.withLabel = true;
