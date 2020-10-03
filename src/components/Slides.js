@@ -28,11 +28,10 @@ export default class Slides extends React.Component {
   }
 
   componentDidMount() {
-    fetch(
-      "https://api.airtable.com/v0/appqVNF1da0YQC1Tq/Photos?api_key=keyujqQNYZtE5jjIi&filterByFormula=NOT%28%7Bdraft%7D%29&sort%5B0%5D%5Bfield%5D=position&sort%5B0%5D%5Bdirection%5D=asc"
-    )
+    fetch("https://boiling-bastion-11005.herokuapp.com/")
       .then(res => res.json())
       .then(res => {
+        console.log(res);
         // ID slug instead of empty label
         res.records.forEach((element, index) => {
           element.fields.withLabel = true;
