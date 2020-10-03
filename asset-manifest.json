@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/philippefragniere/static/css/main.fa3ef709.chunk.css",
-    "main.js": "/philippefragniere/static/js/main.084ab08c.chunk.js",
-    "main.js.map": "/philippefragniere/static/js/main.084ab08c.chunk.js.map",
-    "runtime-main.js": "/philippefragniere/static/js/runtime-main.8098a19c.js",
-    "runtime-main.js.map": "/philippefragniere/static/js/runtime-main.8098a19c.js.map",
-    "static/js/2.af9547f4.chunk.js": "/philippefragniere/static/js/2.af9547f4.chunk.js",
-    "static/js/2.af9547f4.chunk.js.map": "/philippefragniere/static/js/2.af9547f4.chunk.js.map",
-    "index.html": "/philippefragniere/index.html",
-    "precache-manifest.d623142ffcfe65da4d54c9db29918860.js": "/philippefragniere/precache-manifest.d623142ffcfe65da4d54c9db29918860.js",
-    "service-worker.js": "/philippefragniere/service-worker.js",
-    "static/css/main.fa3ef709.chunk.css.map": "/philippefragniere/static/css/main.fa3ef709.chunk.css.map",
-    "static/js/2.af9547f4.chunk.js.LICENSE.txt": "/philippefragniere/static/js/2.af9547f4.chunk.js.LICENSE.txt",
-    "static/media/fonts.css": "/philippefragniere/static/media/GT-America-Standard-Regular.d331aa7a.woff"
+    "main.css": "http://mmattm.github.io/philippefragniere/static/css/main.2ad5e1c8.chunk.css",
+    "main.js": "http://mmattm.github.io/philippefragniere/static/js/main.aab43b6e.chunk.js",
+    "main.js.map": "http://mmattm.github.io/philippefragniere/static/js/main.aab43b6e.chunk.js.map",
+    "runtime-main.js": "http://mmattm.github.io/philippefragniere/static/js/runtime-main.42179d7d.js",
+    "runtime-main.js.map": "http://mmattm.github.io/philippefragniere/static/js/runtime-main.42179d7d.js.map",
+    "static/js/2.af9547f4.chunk.js": "http://mmattm.github.io/philippefragniere/static/js/2.af9547f4.chunk.js",
+    "static/js/2.af9547f4.chunk.js.map": "http://mmattm.github.io/philippefragniere/static/js/2.af9547f4.chunk.js.map",
+    "index.html": "http://mmattm.github.io/philippefragniere/index.html",
+    "precache-manifest.2f547ce3d65440c077b9bf7730582efc.js": "http://mmattm.github.io/philippefragniere/precache-manifest.2f547ce3d65440c077b9bf7730582efc.js",
+    "service-worker.js": "http://mmattm.github.io/philippefragniere/service-worker.js",
+    "static/css/main.2ad5e1c8.chunk.css.map": "http://mmattm.github.io/philippefragniere/static/css/main.2ad5e1c8.chunk.css.map",
+    "static/js/2.af9547f4.chunk.js.LICENSE.txt": "http://mmattm.github.io/philippefragniere/static/js/2.af9547f4.chunk.js.LICENSE.txt",
+    "static/media/fonts.css": "http://mmattm.github.io/philippefragniere/static/media/GT-America-Standard-Regular.d331aa7a.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.8098a19c.js",
+    "static/js/runtime-main.42179d7d.js",
     "static/js/2.af9547f4.chunk.js",
-    "static/css/main.fa3ef709.chunk.css",
-    "static/js/main.084ab08c.chunk.js"
+    "static/css/main.2ad5e1c8.chunk.css",
+    "static/js/main.aab43b6e.chunk.js"
   ]
 }
