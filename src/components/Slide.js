@@ -66,38 +66,43 @@ function Slide({
       <Helmet>
         <title>Philippe Fragniere — {fields.label}</title>
       </Helmet>
-      <div
-        className="slide-item"
-        key={fields.id}
-        onClick={isAnimated ? undefined : e => changeSlide(e)}
-        //  onMouseMove={e => mouseMove(e)}
-      >
-        {fields.video ? (
-          <ReactPlayer
-            url={fields.video[0].url}
-            playing={!isAnimated}
-            loop={true}
-            playsinline={true}
-            width="100%"
-            height="100%"
-            //onClick={unmute}
-            className="slide-visual loaded video"
-            config={{
-              file: {
-                attributes: {
-                  autoPlay: true,
-                  muted: muted
+      <div className="slide">
+        <div
+          className="slide-item"
+          key={fields.id}
+          onClick={isAnimated ? undefined : e => changeSlide(e)}
+          //  onMouseMove={e => mouseMove(e)}
+        >
+          {fields.video ? (
+            <ReactPlayer
+              url={fields.video[0].url}
+              playing={!isAnimated}
+              loop={true}
+              playsinline={true}
+              width="100%"
+              height="100%"
+              //onClick={unmute}
+              className="slide-visual loaded video"
+              config={{
+                file: {
+                  attributes: {
+                    autoPlay: true,
+                    muted: muted
+                  }
                 }
-              }
-            }}
-            // onReady={e => handleOnReady())}
-            // onStart={e => console.log("start")}
-          />
-        ) : null}
-        {fields.photo && !fields.video ? (
-          <Img src={fields.photo[0].thumbnails.large.url} alt={fields.label} />
-        ) : null}
-        {!fields.video && !fields.photo ? "No visuals" : null}
+              }}
+              // onReady={e => handleOnReady())}
+              // onStart={e => console.log("start")}
+            />
+          ) : null}
+          {fields.photo && !fields.video ? (
+            <Img
+              src={fields.photo[0].thumbnails.large.url}
+              alt={fields.label}
+            />
+          ) : null}
+          {!fields.video && !fields.photo ? "No visuals" : null}
+        </div>
       </div>
     </>
   );

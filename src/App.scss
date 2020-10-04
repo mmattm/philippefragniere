@@ -92,6 +92,70 @@ h5 {
   height: 100%;
 }
 
+.loader {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .spinner {
+    width: 50%;
+    height: 50%;
+    background: rgb(221, 221, 221);
+    background: linear-gradient(271deg, #fff, #ececec);
+    background-size: 400% 400%;
+    -webkit-animation: Spinning 1s ease infinite;
+    -moz-animation: Spinning 1s ease infinite;
+    animation: Spinning 1s ease infinite;
+  }
+}
+
+.grid {
+  .loader {
+    display: none;
+  }
+}
+@-webkit-keyframes Spinning {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+@-moz-keyframes Spinning {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+@keyframes Spinning {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
 .slide-item {
   //transform: translateZ(0);
   display: flex;

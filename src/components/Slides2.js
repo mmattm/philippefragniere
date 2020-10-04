@@ -1,14 +1,12 @@
-import React, {Suspense} from "react";
+import React from "react";
 import {BrowserRouter as Router, Route, Redirect} from "react-router-dom";
 
 import {CSSTransition} from "react-transition-group";
 import "../App.scss";
-//import Slide from "./Slide";
+import Slide from "./Slide";
 import Main from "./Main";
-import {slugify} from "../utils";
-import Spinner from "./Spinner";
 
-const Slide = React.lazy(() => import("./Slide"));
+import {slugify} from "../utils";
 
 export default class Slides extends React.Component {
   constructor(props) {
@@ -125,8 +123,8 @@ export default class Slides extends React.Component {
                     onExited={this.onExited}
                     unmountOnExit
                   >
-                    {
-                      <Suspense fallback={<Spinner />}>
+                    <div className="slide">
+                      {
                         <Slide
                           {...slide}
                           slides={this.state.slides}
@@ -135,8 +133,8 @@ export default class Slides extends React.Component {
                           setSlideDisplayed={this.setSlideDisplayed}
                           muted={this.state.muted}
                         />
-                      </Suspense>
-                    }
+                      }
+                    </div>
                   </CSSTransition>
                 )}
               </Route>
