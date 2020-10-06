@@ -33,6 +33,8 @@ const Fetch = () => {
     if (location.pathname !== "/") {
       let pos = res.records.findIndex(k => k.path === location.pathname);
       return pos >= 0 ? pos : 0;
+    } else {
+      return 0;
     }
   }
 
