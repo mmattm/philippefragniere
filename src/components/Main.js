@@ -31,9 +31,13 @@ function Main({slides, current, setSlide, setDirection}) {
             </span>
           </h2>
         </div>
-        <div className="fixed bottom-left">
-          {!showThumbs && current.fields.label && current.fields.label}
-        </div>
+        <div
+          className="fixed bottom-left"
+          dangerouslySetInnerHTML={{
+            __html:
+              !showThumbs && current.fields.label ? current.fields.label : null
+          }}
+        />
       </div>
     </>
   );
