@@ -1,28 +1,24 @@
-import React, {Suspense} from "react";
-import {Img as Simg, resource} from "react-suspense-img";
+import React, {Suspense, useState} from "react";
+import {Img as Simg} from "react-suspense-img";
 import Spinner from "./Spinner";
 
-export default class Img extends React.Component {
-  state = {loaded: false};
+export default function Img({src, alt}) {
+  const [loaded, setLoaded] = useState(false);
 
-  onLoad = () => {
+  let onLoad = () => {
     setTimeout(() => {
-      this.setState({loaded: true});
+      setLoaded(true);
     }, 50);
   };
 
-  render() {
-    const {loaded} = this.state;
-
-    return (
-      <React.Suspense fallback=<Spinner />>
-        <Simg
-          src={this.props.src}
-          alt={this.props.alt}
-          onLoad={this.onLoad}
-          className={"slide-visual" + (loaded ? " loaded" : "")}
-        />
-      </React.Suspense>
-    );
-  }
+  return (
+    <Suspense fallback={<Spinner />}>
+      <Simg
+        src={src}
+        alt={alt}
+        onLoad={onLoad}
+        className={"slide-visual" + (loaded ? " loaded" : "")}
+      />
+    </Suspense>
+  );
 }

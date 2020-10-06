@@ -1,34 +1,21 @@
-import React from "react";
-import {useLocation} from "react-router-dom";
+import React, {useState} from "react";
 import Thumbs from "./Thumbs";
 
-function Main({state, showThumbs, toggleThumbs, setDirection}) {
-  let location = useLocation();
-
-  function currentRoute() {
-    return state.routes.find(function(route) {
-      return route.path === location.pathname;
-    });
-  }
-
-  let label = "Loading";
-  if (currentRoute()) {
-    if (currentRoute().slide)
-      label = currentRoute().slide.fields.withLabel
-        ? currentRoute().slide.fields.label
-        : "";
-  }
-
+function Main({slides, current, setSlide, setDirection}) {
+  //let location = useLocation();
+  const [showThumbs, toggleThumbs] = useState(false);
   return (
     <>
       <div className={showThumbs ? "white" : ""}>
-        {showThumbs ? (
+        {showThumbs && (
           <Thumbs
-            slides={state.slides}
-            setDirection={setDirection}
+            slides={slides}
             toggleThumbs={toggleThumbs}
+            setDirection={setDirection}
+            setSlide={setSlide}
           />
-        ) : null}
+        )}
+
         <div className="fixed top-left">
           <h1>
             {showThumbs ? <a href="#">Bookings</a> : "Philippe Fragnière"}
@@ -36,13 +23,16 @@ function Main({state, showThumbs, toggleThumbs, setDirection}) {
         </div>
         <div className="fixed top-right">
           <h2>
-            <span onClick={toggleThumbs} className="clickable">
+            <span
+              onClick={() => toggleThumbs(!showThumbs)}
+              className="clickable"
+            >
               {showThumbs ? "Close" : "More"}
             </span>
           </h2>
         </div>
         <div className="fixed bottom-left">
-          {showThumbs ? null : <h2>{label}</h2>}
+          {!showThumbs && current.fields.label && current.fields.label}
         </div>
       </div>
     </>

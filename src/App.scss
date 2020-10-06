@@ -94,6 +94,7 @@ h5 {
 
 .loader {
   display: flex;
+  position: absolute;
   height: 100%;
   width: 100%;
   align-items: center;
@@ -102,57 +103,44 @@ h5 {
   .spinner {
     width: 50%;
     height: 50%;
-    background: rgb(221, 221, 221);
-    background: linear-gradient(271deg, #fff, #ececec);
-    background-size: 400% 400%;
-    -webkit-animation: Spinning 1s ease infinite;
-    -moz-animation: Spinning 1s ease infinite;
-    animation: Spinning 1s ease infinite;
+    opacity: 1;
+    -webkit-animation: pulse 500ms ease-in-out infinite alternate;
+    -moz-animation: pulse 500ms ease-in-out infinite alternate;
+    animation: pulse 500ms ease-in-out infinite alternate;
   }
 }
 
 .grid {
   .loader {
     display: none;
+    //position: relative;
   }
 }
-@-webkit-keyframes Spinning {
+@-webkit-keyframes pulse {
   0% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
+    background-color: #E3E3E3;
   }
 
   100% {
-    background-position: 0 50%;
+    background-color: #f4f4f4;
   }
 }
-@-moz-keyframes Spinning {
+@-moz-keyframes pulse {
   0% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
+    background-color: #E3E3E3;
   }
 
   100% {
-    background-position: 0 50%;
+    background-color: #f4f4f4;
   }
 }
-@keyframes Spinning {
+@keyframes pulse {
   0% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
+    background-color: #E3E3E3;
   }
 
   100% {
-    background-position: 0 50%;
+    background-color: #f4f4f4;
   }
 }
 
@@ -271,6 +259,7 @@ h5 {
 }
 
 .gallery {
+  width: 100%;
   min-height: 100%;
   position: absolute;
   background: rgba(0,0,0,0.9);
@@ -300,6 +289,10 @@ h5 {
 .grid-item {
   .slide-visual {
     cursor: pointer;
+  }
+
+  img {
+    vertical-align: middle;
   }
 }
 // .slide-visual.video {

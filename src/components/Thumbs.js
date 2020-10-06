@@ -1,9 +1,6 @@
 import React from "react";
 import Masonry from "react-masonry-css";
 import Img from "./Img";
-import {slugify} from "../utils";
-
-import {useHistory} from "react-router-dom";
 
 const breakpointColumnsObj = {
   default: 9,
@@ -12,24 +9,20 @@ const breakpointColumnsObj = {
   500: 2
 };
 
-function Thumbs({slides, setDirection, toggleThumbs}) {
-  let history = useHistory();
-
+function Thumbs(props) {
   function toggleImage(path) {
-    setDirection("fade");
-    history.push({
-      pathname: path,
-      state: {}
-    });
-    toggleThumbs();
+    //setDirection("fade");
+    props.toggleThumbs(false);
+    props.setDirection("fade");
+    props.setSlide(path);
   }
 
-  const items = slides.map(function(slide) {
+  const items = props.slides.map(function(slide, index) {
     return (
       <div
         className="grid-item"
         key={slide.id}
-        onClick={() => toggleImage("/" + slugify(slide.fields.label))}
+        onClick={() => toggleImage(index)}
       >
         {slide.fields.photo ? (
           <Img
