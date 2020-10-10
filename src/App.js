@@ -1,10 +1,10 @@
 import React from "react";
-import Slides from "./components/Slides";
+import Main from "./components/Main";
 
 function App() {
   return (
     <>
-      <Slides />
+      <Main />
     </>
   );
 }

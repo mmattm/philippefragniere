@@ -10,11 +10,9 @@ const breakpointColumnsObj = {
 };
 
 function Thumbs(props) {
-  function toggleImage(path) {
-    //setDirection("fade");
+  function toggleImage(index) {
     props.toggleThumbs(false);
-    props.setDirection("fade");
-    props.setSlide(path);
+    props.dispatch({type: "set", position: index});
   }
 
   const items = props.slides.map(function(slide, index) {

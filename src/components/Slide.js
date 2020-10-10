@@ -2,6 +2,7 @@ import React from "react";
 import Img from "./Img";
 import {Helmet} from "react-helmet";
 import ReactPlayer from "react-player";
+import {stripHtml} from "../utils";
 
 function Slide({id, fields}) {
   /*
@@ -26,7 +27,8 @@ function Slide({id, fields}) {
     <>
       <Helmet>
         <title>
-          Philippe Fragniere {fields.label ? " — " + fields.label : ""}
+          Philippe Fragniere{" "}
+          {fields.label ? " — " + stripHtml(fields.label) : ""}
         </title>
       </Helmet>
       <div className="slide">

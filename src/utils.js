@@ -27,3 +27,9 @@ export function makeTitle(slug) {
 
   return words.join(" ");
 }
+
+export function stripHtml(html) {
+  var tmp = document.createElement("DIV");
+  tmp.innerHTML = html;
+  return tmp.textContent || tmp.innerText || "";
+}
