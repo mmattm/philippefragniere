@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f98fbdd2d09a2bda4d8eb01ad631cfda",
+    "revision": "4df431658b3f9d09b94d6a472df7cfe6",
     "url": "/philippefragniere/index.html"
   },
   {
-    "revision": "2d6fab1cb4cbe101bc69",
-    "url": "/philippefragniere/static/css/main.635cc50f.chunk.css"
+    "revision": "b207ea1b58c5eb951b2c",
+    "url": "/philippefragniere/static/css/main.a5104792.chunk.css"
   },
   {
-    "revision": "d452b6bb885359ce8019",
-    "url": "/philippefragniere/static/js/2.c987c113.chunk.js"
+    "revision": "2969faaddc66766bb3a4",
+    "url": "/philippefragniere/static/js/2.2d74439b.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/philippefragniere/static/js/2.c987c113.chunk.js.LICENSE.txt"
+    "url": "/philippefragniere/static/js/2.2d74439b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2d6fab1cb4cbe101bc69",
-    "url": "/philippefragniere/static/js/main.aa668d37.chunk.js"
+    "revision": "b207ea1b58c5eb951b2c",
+    "url": "/philippefragniere/static/js/main.8eb130bd.chunk.js"
   },
   {
     "revision": "2de5e0db724c9fd19ee4",
