@@ -45,7 +45,7 @@ const Slider = props => {
     onSwipedRight: () => slide("prev"),
     onSwiping: () => setSwiping(1),
     preventDefaultTouchmoveEvent: true,
-    trackMouse: true
+    trackMouse: false
   });
 
   const [swiping, setSwiping] = useState(0);
