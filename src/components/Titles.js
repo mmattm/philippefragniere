@@ -14,21 +14,15 @@ function Titles({slides, label, dispatch}) {
           />
         )}
         <div className="fixed top-left">
-          <h1>
-            {showThumbs ? (
-              <a href="mailto:contact@philippefragniere.ch">Bookings</a>
-            ) : (
-              "Philippe Fragnière"
-            )}
-          </h1>
+          <h1>{showThumbs ? null : "Philippe Fragnière"}</h1>
         </div>
         <div className="fixed top-right">
-          <h2 onClick={() => toggleThumbs(!showThumbs)} className="clickable">
-            {showThumbs ? "Close" : "More"}
+          <h2 onClick={() => toggleThumbs(!showThumbs)} className="link">
+            {showThumbs ? "Close" : "Index"}
           </h2>
         </div>
         <div
-          className="fixed bottom-left"
+          className="fixed bottom-left label"
           dangerouslySetInnerHTML={{
             __html: !showThumbs && label ? "<h2>" + label + "</h2>" : null
           }}

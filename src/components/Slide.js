@@ -4,7 +4,7 @@ import {Helmet} from "react-helmet";
 import ReactPlayer from "react-player";
 import {stripHtml} from "../utils";
 
-function Slide({id, fields}) {
+function Slide({id, fields, muted}) {
   /*
   React.useEffect(() => {
     //for (var slide of [current, prev, next]) setSlideDisplayed(slide);
@@ -27,7 +27,7 @@ function Slide({id, fields}) {
     <>
       <Helmet>
         <title>
-          Philippe Fragniere{" "}
+          Philippe Fragniere
           {fields.label ? " — " + stripHtml(fields.label) : ""}
         </title>
       </Helmet>
@@ -45,13 +45,12 @@ function Slide({id, fields}) {
               playsinline={true}
               width="100%"
               height="100%"
-              //onClick={unmute}
               className="slide-visual loaded video"
               config={{
                 file: {
                   attributes: {
                     autoPlay: true,
-                    muted: true
+                    muted: muted
                   }
                 }
               }}

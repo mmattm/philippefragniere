@@ -5,6 +5,7 @@ $screen-lg-min: 992px; // Large tablets and desktops
 $screen-xl-min: 1200px; // Small devices
 $margin: 1.5rem;
 $titles_margin: 1rem;
+$transition-speed: 600ms;
 @mixin sm {
   @media (min-width: #{$screen-sm-min}) {
     @content;
@@ -36,11 +37,11 @@ body {
   font-family: 'sui', sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   touch-action: manipulation;
 }
 
-.clickable,
+.link,
 a,
 a:focus,
 a:visited {
@@ -49,7 +50,7 @@ a:visited {
   cursor: pointer;
 }
 
-.clickable:hover,
+.link:hover,
 a:hover {
   color: #424040;
 }
@@ -61,19 +62,24 @@ h4,
 h5 {
   margin: 0;
   padding: $titles_margin;
-  font-size: 1.25rem;
+  font-size: 1.175rem;
   font-weight: normal;
   font-style: normal;
   @include sm {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
   }
 }
 
 .white {
   color: white;
 
-  .clickable,
+  .link,
   a {
+    color: rgb(179, 179, 179);
+  }
+
+  .link:hover,
+  a:hover {
     color: white;
   }
 }
@@ -164,11 +170,11 @@ h5 {
 }
 
 .slide-enter-active {
-  transition: all 800ms ease-in-out;
+  transition: all $transition-speed ease-in-out;
 }
 
 .slide-exit-active {
-  transition: all 800ms ease-in-out;
+  transition: all $transition-speed ease-in-out;
 }
 
 .fade-transition {
@@ -246,6 +252,10 @@ h5 {
   right: calc(#{$margin - $titles_margin});
 }
 
+.label {
+  background: rgba(255,255,255,0.9);
+}
+
 .grid {
   display: -webkit-box;
   /* Not needed if autoprefixing */
@@ -261,13 +271,13 @@ h5 {
   width: 100%;
   min-height: 100%;
   position: absolute;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0,0,0,1);
   position: absolute;
   z-index: 10;
 }
 
 .gallery-content {
-  padding: 6rem $margin;
+  padding: 2rem $margin;
 }
 
 .grid_column {
@@ -302,4 +312,32 @@ h5 {
   &.loaded {
     opacity: 1;
   }
+}
+
+.column {
+  float: left;
+}
+
+.column-small {
+  width: 80%;
+  @include md {
+    width: 33.3%;
+  }
+}
+
+.column-large {
+  width: 100%;
+  @include md {
+    width: 50%;
+  }
+}
+
+.row {
+  margin: calc(#{$margin - $titles_margin});
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

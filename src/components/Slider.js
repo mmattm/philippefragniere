@@ -49,6 +49,7 @@ const Slider = props => {
   });
 
   const [swiping, setSwiping] = useState(0);
+  const [muted, setMute] = useState(true);
   const [current, dispatch] = useReducer(reducer, initialPos, init);
 
   useEffect(() => {
@@ -71,13 +72,14 @@ const Slider = props => {
 
   const slide = dir => {
     setSwiping(0);
+    if (muted) setMute(false);
     if (!animated.value) dispatch({type: dir, numItems: res.records.length});
   };
 
   const routes = res.records.map((slide, index) => {
     return (
       <Route key={index} exact path={slide.path}>
-        {<Slide {...slide} />}
+        {<Slide {...slide} muted={muted} />}
       </Route>
     );
   });
@@ -104,7 +106,7 @@ const Slider = props => {
         <TransitionGroup>
           <CSSTransition
             key={location.key}
-            timeout={800}
+            timeout={600}
             classNames="slide"
             onEntering={animated.animStart}
             onExited={animated.animEnd}
