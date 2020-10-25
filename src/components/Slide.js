@@ -42,6 +42,7 @@ function Slide({id, fields, muted}) {
               url={fields.video[0].url}
               playing={true}
               loop={true}
+              controls={false}
               playsinline={true}
               width="100%"
               height="100%"
@@ -49,8 +50,9 @@ function Slide({id, fields, muted}) {
               config={{
                 file: {
                   attributes: {
-                    autoPlay: true,
-                    muted: muted
+                    autoPlay: false,
+                    muted: muted,
+                    playsInline: true
                   }
                 }
               }}
