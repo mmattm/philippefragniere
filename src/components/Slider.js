@@ -72,7 +72,7 @@ const Slider = props => {
 
   const slide = dir => {
     setSwiping(0);
-    if (muted) setMute(false);
+    if (!muted) setMute(true);
     if (!animated.value) dispatch({type: dir, numItems: res.records.length});
   };
 
@@ -88,8 +88,11 @@ const Slider = props => {
     <>
       <Titles
         slides={res.records}
-        label={res.records[current.position].fields.label}
+        currentSlide={res.records[current.position]}
+        //  label={res.records[current.position].fields.label}
         dispatch={dispatch}
+        muted={muted}
+        setMute={setMute}
       />
 
       <div

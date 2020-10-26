@@ -47,12 +47,13 @@ function Slide({id, fields, muted}) {
               width="100%"
               height="100%"
               className="slide-visual loaded video"
+              muted={muted}
               config={{
                 file: {
                   attributes: {
-                    autoPlay: false,
-                    muted: muted,
-                    playsInline: true
+                    autoPlay: true,
+                    playsInline: true,
+                    poster: fields.photo && fields.photo[0].thumbnails.large.url
                   }
                 }
               }}

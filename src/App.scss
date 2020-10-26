@@ -242,6 +242,11 @@ h5 {
   right: calc(#{$margin - $titles_margin});
 }
 
+.bottom-right {
+  bottom: calc(#{$margin - $titles_margin});
+  right: calc(#{$margin - $titles_margin});
+}
+
 .top-left {
   top: calc(#{$margin - $titles_margin});
   left: calc(#{$margin - $titles_margin});
