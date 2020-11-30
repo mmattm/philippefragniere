@@ -44,7 +44,10 @@ function Thumbs(props) {
               <br />
               <a href="mailto:contact@philippefragniere.ch">Contact</a>
               <br />
-              <a href="https://www.instagram.com/philippefragniere/">
+              <a
+                href="https://www.instagram.com/philippefragniere/"
+                target="blank"
+              >
                 Instagram
               </a>
             </h2>
@@ -53,7 +56,9 @@ function Thumbs(props) {
             <h2>
               Representation in Paris and New-York
               <br />
-              <a href="https://www.quadriga.fr/">Quadriga Management</a>
+              <a href="https://www.quadriga.fr/" target="blank">
+                Quadriga Management
+              </a>
             </h2>
           </div>
         </div>
