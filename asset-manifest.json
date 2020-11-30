@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/philippefragniere.ch/static/css/main.9b0c13dd.chunk.css",
-    "main.js": "/philippefragniere.ch/static/js/main.86e82478.chunk.js",
-    "main.js.map": "/philippefragniere.ch/static/js/main.86e82478.chunk.js.map",
-    "runtime-main.js": "/philippefragniere.ch/static/js/runtime-main.7edfa5f4.js",
-    "runtime-main.js.map": "/philippefragniere.ch/static/js/runtime-main.7edfa5f4.js.map",
-    "static/js/2.2d74439b.chunk.js": "/philippefragniere.ch/static/js/2.2d74439b.chunk.js",
-    "static/js/2.2d74439b.chunk.js.map": "/philippefragniere.ch/static/js/2.2d74439b.chunk.js.map",
-    "index.html": "/philippefragniere.ch/index.html",
-    "precache-manifest.9a87247adec946c472983b264aa108a6.js": "/philippefragniere.ch/precache-manifest.9a87247adec946c472983b264aa108a6.js",
-    "service-worker.js": "/philippefragniere.ch/service-worker.js",
-    "static/css/main.9b0c13dd.chunk.css.map": "/philippefragniere.ch/static/css/main.9b0c13dd.chunk.css.map",
-    "static/js/2.2d74439b.chunk.js.LICENSE.txt": "/philippefragniere.ch/static/js/2.2d74439b.chunk.js.LICENSE.txt",
-    "static/media/fonts.css": "/philippefragniere.ch/static/media/GT-America-Standard-Regular.d331aa7a.woff"
+    "main.css": "/www.philippefragniere.ch/static/css/main.6093943d.chunk.css",
+    "main.js": "/www.philippefragniere.ch/static/js/main.ec0b6674.chunk.js",
+    "main.js.map": "/www.philippefragniere.ch/static/js/main.ec0b6674.chunk.js.map",
+    "runtime-main.js": "/www.philippefragniere.ch/static/js/runtime-main.8d2efaf8.js",
+    "runtime-main.js.map": "/www.philippefragniere.ch/static/js/runtime-main.8d2efaf8.js.map",
+    "static/js/2.2d74439b.chunk.js": "/www.philippefragniere.ch/static/js/2.2d74439b.chunk.js",
+    "static/js/2.2d74439b.chunk.js.map": "/www.philippefragniere.ch/static/js/2.2d74439b.chunk.js.map",
+    "index.html": "/www.philippefragniere.ch/index.html",
+    "precache-manifest.1fce760d4b1d19d13d6b6591be290535.js": "/www.philippefragniere.ch/precache-manifest.1fce760d4b1d19d13d6b6591be290535.js",
+    "service-worker.js": "/www.philippefragniere.ch/service-worker.js",
+    "static/css/main.6093943d.chunk.css.map": "/www.philippefragniere.ch/static/css/main.6093943d.chunk.css.map",
+    "static/js/2.2d74439b.chunk.js.LICENSE.txt": "/www.philippefragniere.ch/static/js/2.2d74439b.chunk.js.LICENSE.txt",
+    "static/media/fonts.css": "/www.philippefragniere.ch/static/media/GT-America-Standard-Regular.d331aa7a.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.7edfa5f4.js",
+    "static/js/runtime-main.8d2efaf8.js",
     "static/js/2.2d74439b.chunk.js",
-    "static/css/main.9b0c13dd.chunk.css",
-    "static/js/main.86e82478.chunk.js"
+    "static/css/main.6093943d.chunk.css",
+    "static/js/main.ec0b6674.chunk.js"
   ]
 }
