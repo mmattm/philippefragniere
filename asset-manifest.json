@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/www.philippefragniere.ch/static/css/main.6093943d.chunk.css",
-    "main.js": "/www.philippefragniere.ch/static/js/main.ec0b6674.chunk.js",
-    "main.js.map": "/www.philippefragniere.ch/static/js/main.ec0b6674.chunk.js.map",
-    "runtime-main.js": "/www.philippefragniere.ch/static/js/runtime-main.8d2efaf8.js",
-    "runtime-main.js.map": "/www.philippefragniere.ch/static/js/runtime-main.8d2efaf8.js.map",
-    "static/js/2.2d74439b.chunk.js": "/www.philippefragniere.ch/static/js/2.2d74439b.chunk.js",
-    "static/js/2.2d74439b.chunk.js.map": "/www.philippefragniere.ch/static/js/2.2d74439b.chunk.js.map",
-    "index.html": "/www.philippefragniere.ch/index.html",
-    "precache-manifest.f680e087109de995da16a635b33d1f49.js": "/www.philippefragniere.ch/precache-manifest.f680e087109de995da16a635b33d1f49.js",
-    "service-worker.js": "/www.philippefragniere.ch/service-worker.js",
-    "static/css/main.6093943d.chunk.css.map": "/www.philippefragniere.ch/static/css/main.6093943d.chunk.css.map",
-    "static/js/2.2d74439b.chunk.js.LICENSE.txt": "/www.philippefragniere.ch/static/js/2.2d74439b.chunk.js.LICENSE.txt",
-    "static/media/fonts.css": "/www.philippefragniere.ch/static/media/GT-America-Standard-Regular.d331aa7a.woff"
+    "main.css": "./static/css/main.8a5df836.chunk.css",
+    "main.js": "./static/js/main.563e6d18.chunk.js",
+    "main.js.map": "./static/js/main.563e6d18.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.8b5f1bcc.js",
+    "runtime-main.js.map": "./static/js/runtime-main.8b5f1bcc.js.map",
+    "static/js/2.2d74439b.chunk.js": "./static/js/2.2d74439b.chunk.js",
+    "static/js/2.2d74439b.chunk.js.map": "./static/js/2.2d74439b.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.772b2b8b976d1f22712d5e00b8de87ef.js": "./precache-manifest.772b2b8b976d1f22712d5e00b8de87ef.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.8a5df836.chunk.css.map": "./static/css/main.8a5df836.chunk.css.map",
+    "static/js/2.2d74439b.chunk.js.LICENSE.txt": "./static/js/2.2d74439b.chunk.js.LICENSE.txt",
+    "static/media/fonts.css": "./static/media/GT-America-Standard-Regular.d331aa7a.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.8d2efaf8.js",
+    "static/js/runtime-main.8b5f1bcc.js",
     "static/js/2.2d74439b.chunk.js",
-    "static/css/main.6093943d.chunk.css",
-    "static/js/main.ec0b6674.chunk.js"
+    "static/css/main.8a5df836.chunk.css",
+    "static/js/main.563e6d18.chunk.js"
   ]
 }
