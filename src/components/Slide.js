@@ -60,10 +60,7 @@ function Slide({id, fields, muted}) {
             />
           )}
           {fields.photo && !fields.video && (
-            <Img
-              src={fields.photo[0].thumbnails.large.url}
-              alt={fields.label}
-            />
+            <Img src={fields.photo[0].thumbnails.large.url} alt={fields.alt} />
           )}
           {!fields.video && !fields.photo && "No visuals"}
         </div>
