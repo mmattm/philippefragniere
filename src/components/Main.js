@@ -15,7 +15,7 @@ const Fetch = () => {
   // OLD https://boiling-bastion-11005.herokuapp.com/
   const res = useFetch(
     "https://boiling-bastion-11005.herokuapp.com/api/" +
-      "visuals?populate=%2A&sort[0]=position%3Aasc",
+      "visuals?populate=%2A&sort[0]=position%3Aasc&pagination[pageSize]=1000",
     {
       method: "GET",
     }
