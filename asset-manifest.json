@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "./static/css/main.0879bc4d.css",
-    "main.js": "./static/js/main.d5fc719d.js",
+    "main.js": "./static/js/main.224f0c5e.js",
     "static/media/GT-America-Standard-Regular.eot": "./static/media/GT-America-Standard-Regular.7f7542d83b09c1ff937b.eot",
     "static/media/GT-America-Standard-Regular.woff": "./static/media/GT-America-Standard-Regular.5467bc49331912ddec0a.woff",
     "static/media/GT-America-Standard-Regular.woff2": "./static/media/GT-America-Standard-Regular.9d7f8515b85c7b6b2e7d.woff2",
     "index.html": "./index.html",
     "main.0879bc4d.css.map": "./static/css/main.0879bc4d.css.map",
-    "main.d5fc719d.js.map": "./static/js/main.d5fc719d.js.map"
+    "main.224f0c5e.js.map": "./static/js/main.224f0c5e.js.map"
   },
   "entrypoints": [
     "static/css/main.0879bc4d.css",
-    "static/js/main.d5fc719d.js"
+    "static/js/main.224f0c5e.js"
   ]
 }
