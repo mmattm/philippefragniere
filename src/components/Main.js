@@ -14,15 +14,9 @@ const Fetch = () => {
 
   // OLD https://boiling-bastion-11005.herokuapp.com/
   console.log(REACT_APP_STRAPI_URL);
-  const res = useFetch(
-    (REACT_APP_STRAPI_URL
-      ? REACT_APP_STRAPI_URL
-      : "https://boiling-bastion-11005.herokuapp.com/api/") +
-      "visuals?populate=%2A&sort[0]=position%3Aasc",
-    {
-      method: "GET",
-    }
-  );
+  const res = useFetch("https://boiling-bastion-11005.herokuapp.com/api/", {
+    method: "GET",
+  });
 
   //const mounted = useRef();
   const [mounted, setMounted] = useState(false);
