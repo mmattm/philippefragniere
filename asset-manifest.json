@@ -1,23 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.8a5df836.chunk.css",
-    "main.js": "./static/js/main.25398650.chunk.js",
-    "main.js.map": "./static/js/main.25398650.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.8b5f1bcc.js",
-    "runtime-main.js.map": "./static/js/runtime-main.8b5f1bcc.js.map",
-    "static/js/2.2d74439b.chunk.js": "./static/js/2.2d74439b.chunk.js",
-    "static/js/2.2d74439b.chunk.js.map": "./static/js/2.2d74439b.chunk.js.map",
+    "main.css": "./static/css/main.0879bc4d.css",
+    "main.js": "./static/js/main.d5fc719d.js",
+    "static/media/GT-America-Standard-Regular.eot": "./static/media/GT-America-Standard-Regular.7f7542d83b09c1ff937b.eot",
+    "static/media/GT-America-Standard-Regular.woff": "./static/media/GT-America-Standard-Regular.5467bc49331912ddec0a.woff",
+    "static/media/GT-America-Standard-Regular.woff2": "./static/media/GT-America-Standard-Regular.9d7f8515b85c7b6b2e7d.woff2",
     "index.html": "./index.html",
-    "precache-manifest.8e5354e27d0e6477da87acb3bfd3a0d5.js": "./precache-manifest.8e5354e27d0e6477da87acb3bfd3a0d5.js",
-    "service-worker.js": "./service-worker.js",
-    "static/css/main.8a5df836.chunk.css.map": "./static/css/main.8a5df836.chunk.css.map",
-    "static/js/2.2d74439b.chunk.js.LICENSE.txt": "./static/js/2.2d74439b.chunk.js.LICENSE.txt",
-    "static/media/fonts.css": "./static/media/GT-America-Standard-Regular.d331aa7a.woff"
+    "main.0879bc4d.css.map": "./static/css/main.0879bc4d.css.map",
+    "main.d5fc719d.js.map": "./static/js/main.d5fc719d.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.8b5f1bcc.js",
-    "static/js/2.2d74439b.chunk.js",
-    "static/css/main.8a5df836.chunk.css",
-    "static/js/main.25398650.chunk.js"
+    "static/css/main.0879bc4d.css",
+    "static/js/main.d5fc719d.js"
   ]
 }
