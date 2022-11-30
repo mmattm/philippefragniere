@@ -6,26 +6,31 @@ const breakpointColumnsObj = {
   default: 9,
   1100: 6,
   700: 3,
-  500: 2
+  500: 2,
 };
 
 function Thumbs(props) {
   function toggleImage(index) {
     props.toggleThumbs(false);
-    props.dispatch({type: "set", position: index});
+    props.dispatch({ type: "set", position: index });
   }
 
-  const items = props.slides.map(function(slide, index) {
+  const items = props.slides.map(function (slide, index) {
     return (
       <div
         className="grid-item"
         key={slide.id}
         onClick={() => toggleImage(index)}
       >
-        {slide.fields.photo ? (
+        {slide.attributes.video.data ? (
           <Img
-            src={slide.fields.photo[0].thumbnails.large.url}
-            alt={slide.fields.label}
+            src={slide.attributes.video.data.attributes.previewUrl}
+            alt={slide.attributes.label}
+          />
+        ) : slide.attributes.photo.data ? (
+          <Img
+            src={slide.attributes.photo.data.attributes.formats.small.url}
+            alt={slide.attributes.label}
           />
         ) : (
           "No visuals"

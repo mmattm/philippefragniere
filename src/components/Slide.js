@@ -1,10 +1,10 @@
 import React from "react";
 import Img from "./Img";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import ReactPlayer from "react-player";
-import {stripHtml} from "../utils";
+import { stripHtml } from "../utils";
 
-function Slide({id, fields, muted}) {
+function Slide({ id, attributes, muted }) {
   /*
   React.useEffect(() => {
     //for (var slide of [current, prev, next]) setSlideDisplayed(slide);
@@ -22,13 +22,13 @@ function Slide({id, fields, muted}) {
       }
     }
   }*/
-
+  //console.log(attributes);
   return (
     <>
       <Helmet>
         <title>
           Philippe Fragniere
-          {fields.label ? " — " + stripHtml(fields.label) : ""}
+          {attributes.label ? " — " + stripHtml(attributes.label) : ""}
         </title>
       </Helmet>
       <div className="slide">
@@ -37,9 +37,9 @@ function Slide({id, fields, muted}) {
           key={id}
           //  onMouseMove={e => mouseMove(e)}
         >
-          {fields.video && (
+          {attributes.video.data && (
             <ReactPlayer
-              url={fields.video[0].url}
+              url={attributes.video.data.attributes.url}
               playing={true}
               loop={true}
               controls={false}
@@ -53,16 +53,21 @@ function Slide({id, fields, muted}) {
                   attributes: {
                     autoPlay: true,
                     playsInline: true,
-                    poster: fields.photo && fields.photo[0].thumbnails.large.url
-                  }
-                }
+                    poster:
+                      attributes.photo.data &&
+                      attributes.photo.data.attributes.formats.large.url,
+                  },
+                },
               }}
             />
           )}
-          {fields.photo && !fields.video && (
-            <Img src={fields.photo[0].thumbnails.large.url} alt={fields.alt} />
+          {attributes.photo && !attributes.video.data && (
+            <Img
+              src={attributes.photo.data.attributes.formats.large.url}
+              alt={attributes.alt}
+            />
           )}
-          {!fields.video && !fields.photo && "No visuals"}
+          {!attributes.video && !attributes.photo && "No visuals"}
         </div>
       </div>
     </>

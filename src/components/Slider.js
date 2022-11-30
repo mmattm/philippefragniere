@@ -1,13 +1,13 @@
-import React, {useState, useEffect, useReducer} from "react";
-import {useHistory, useLocation} from "react-router-dom";
-import {BrowserRouter as Route, Switch} from "react-router-dom";
+import React, { useState, useEffect, useReducer } from "react";
+import { useHistory, useLocation } from "react-router-dom";
+import { BrowserRouter as Route, Switch } from "react-router-dom";
 import Slide from "./Slide";
 import Titles from "./Titles";
-import {CSSTransition, TransitionGroup} from "react-transition-group";
-import {useSwipeable} from "react-swipeable";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { useSwipeable } from "react-swipeable";
 
-const init = initialValue => {
-  return {position: initialValue, anim: "fade"};
+const init = (initialValue) => {
+  return { position: initialValue, anim: "fade" };
 };
 
 const reducer = (state, action) => {
@@ -16,16 +16,16 @@ const reducer = (state, action) => {
       return {
         ...state,
         position: (state.position + 1) % action.numItems,
-        anim: "right"
+        anim: "right",
       };
     case "prev":
       return {
         ...state,
         position: (state.position - 1 + action.numItems) % action.numItems,
-        anim: "left"
+        anim: "left",
       };
     case "set":
-      return {...state, position: action.position, anim: "fade"};
+      return { ...state, position: action.position, anim: "fade" };
     case "reset":
       return init(0);
     default:
@@ -33,8 +33,8 @@ const reducer = (state, action) => {
   }
 };
 
-const Slider = props => {
-  const {res, initialPos} = props;
+const Slider = (props) => {
+  const { res, initialPos } = props;
 
   const history = useHistory();
   const location = useLocation();
@@ -45,7 +45,7 @@ const Slider = props => {
     onSwipedRight: () => slide("prev"),
     onSwiping: () => setSwiping(1),
     preventDefaultTouchmoveEvent: true,
-    trackMouse: false
+    trackMouse: false,
   });
 
   const [swiping, setSwiping] = useState(0);
@@ -54,13 +54,13 @@ const Slider = props => {
 
   useEffect(() => {
     history.push({
-      pathname: res.records[current.position].path
+      pathname: res[current.position].path,
     });
   }, [current.position, res, history]);
 
   useEffect(() => {
-    const handleUserKeyPress = event => {
-      const {keyCode} = event;
+    const handleUserKeyPress = (event) => {
+      const { keyCode } = event;
       if (keyCode === 37) slide("prev");
       if (keyCode === 39) slide("next");
     };
@@ -70,13 +70,13 @@ const Slider = props => {
     };
   });
 
-  const slide = dir => {
+  const slide = (dir) => {
     setSwiping(0);
     if (!muted) setMute(true);
-    if (!animated.value) dispatch({type: dir, numItems: res.records.length});
+    if (!animated.value) dispatch({ type: dir, numItems: res.length });
   };
 
-  const routes = res.records.map((slide, index) => {
+  const routes = res.map((slide, index) => {
     return (
       <Route key={index} exact path={slide.path}>
         {<Slide {...slide} muted={muted} />}
@@ -87,8 +87,8 @@ const Slider = props => {
   return (
     <>
       <Titles
-        slides={res.records}
-        currentSlide={res.records[current.position]}
+        slides={res}
+        currentSlide={res[current.position]}
         //  label={res.records[current.position].fields.label}
         dispatch={dispatch}
         muted={muted}
@@ -98,7 +98,7 @@ const Slider = props => {
       <div
         className={"slider " + current.anim + "-transition"}
         {...swipeHandlers}
-        onClick={e =>
+        onClick={(e) =>
           !swiping
             ? e.clientX < e.view.innerWidth / 2
               ? slide("prev")
@@ -136,7 +136,7 @@ function useTransitionEvent(initialValue) {
   return {
     value,
     animStart: animStart,
-    animEnd: animEnd
+    animEnd: animEnd,
   };
 }
 
