@@ -22,7 +22,7 @@ function Slide({ id, attributes, muted }) {
       }
     }
   }*/
-  console.log(attributes);
+  //console.log(attributes);
   return (
     <>
       <Helmet>
