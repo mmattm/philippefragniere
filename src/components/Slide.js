@@ -22,7 +22,7 @@ function Slide({ id, attributes, muted }) {
       }
     }
   }*/
-  //console.log(attributes);
+  console.log(attributes);
   return (
     <>
       <Helmet>
@@ -63,7 +63,10 @@ function Slide({ id, attributes, muted }) {
           )}
           {attributes.photo.data && !attributes.video.data && (
             <Img
-              src={attributes.photo.data.attributes.formats.large.url}
+              src={
+                attributes.photo.data.attributes.formats.large?.url ||
+                attributes.photo.data.attributes.formats.medium.url
+              }
               alt={attributes.alt}
             />
           )}
