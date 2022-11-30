@@ -13,8 +13,12 @@ const Fetch = () => {
   const { REACT_APP_STRAPI_URL } = process.env;
 
   // OLD https://boiling-bastion-11005.herokuapp.com/
+  console.log(REACT_APP_STRAPI_URL);
   const res = useFetch(
-    REACT_APP_STRAPI_URL + "visuals?populate=%2A&sort[0]=position%3Aasc",
+    (REACT_APP_STRAPI_URL
+      ? REACT_APP_STRAPI_URL
+      : "https://boiling-bastion-11005.herokuapp.com/api/") +
+      "visuals?populate=%2A&sort[0]=position%3Aasc",
     {
       method: "GET",
     }
