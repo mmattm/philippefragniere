@@ -61,13 +61,13 @@ function Slide({ id, attributes, muted }) {
               }}
             />
           )}
-          {attributes.photo && !attributes.video.data && (
+          {attributes.photo.data && !attributes.video.data && (
             <Img
               src={attributes.photo.data.attributes.formats.large.url}
               alt={attributes.alt}
             />
           )}
-          {!attributes.video && !attributes.photo && "No visuals"}
+          {!attributes.video.data && !attributes.photo.data && "No visuals"}
         </div>
       </div>
     </>
