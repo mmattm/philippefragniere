@@ -58,13 +58,13 @@ function Thumbs(props) {
             </h2>
           </div>
           <div className="column column-large">
-            <h2>
+            {/* <h2>
               Representation in Paris and New-York
               <br />
               <a href="https://www.quadriga.fr/" target="blank">
                 Quadriga Management
               </a>
-            </h2>
+            </h2> */}
           </div>
         </div>
         <div className="gallery-content">
